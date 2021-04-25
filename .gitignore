@@ -1,4 +1,6 @@
 DS_Store
+*.s
+*.i
 *.o
 *.a
 a.out
