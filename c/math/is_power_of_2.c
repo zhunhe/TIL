@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-#define LEN					1000
+#define LEN			1000
 #define IS_POWER_OF_2		1
 #define IS_NOT_POWER_OF_2	0
 
@@ -14,7 +14,7 @@ int	is_power_of_2(int n)
 
 int	main(void)
 {
-	int	tmp;
+	int tmp;
 
 	for (int idx = INT_MIN; idx < INT_MAX; ++idx)
 	{
