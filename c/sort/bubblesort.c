@@ -15,7 +15,7 @@
 #define LEN		100000
 #define YES		1
 #define NO		0
-#define PRINT	0
+#define PRINT		0
 
 void	swap(int *val1, int *val2)
 {
