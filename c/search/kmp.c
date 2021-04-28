@@ -16,9 +16,9 @@ int	*get_pi(char *s, int len)
 	pi = (int *)malloc(sizeof(int) * len);
 	for (int i = 1, j = 0; i < len; ++i)
 	{
-		while (j > 0 && pi[i] != pi[j])
+		while (j > 0 && s[i] != s[j])
 			j = pi[j - 1];
-		if (pi[i] == pi[j])
+		if (s[i] == s[j])
 			pi[i] = ++j;
 	}
 	return (pi);
