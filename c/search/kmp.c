@@ -9,6 +9,19 @@
 #include <string.h>
 #include <stdlib.h>
 
+int	*get_pi(char *s, int len);
+void	kmp(char *text, char *pattern);
+
+int	main(void)
+{
+	char s1[] = "this is test code to test KMP";
+	char s2[] = "te";
+
+	kmp(s1, s2);
+
+	return (0);
+}
+
 int	*get_pi(char *s, int len)
 {
 	int *pi;
@@ -24,7 +37,7 @@ int	*get_pi(char *s, int len)
 	return (pi);
 }
 
-void	strstr_KMP(char *text, char *pattern)
+void	kmp(char *text, char *pattern)
 {
 	int *pi = get_pi(pattern, strlen(pattern));
 	char *origin = text;
@@ -50,14 +63,4 @@ void	strstr_KMP(char *text, char *pattern)
 		}
 	}
 	free(pi);
-}
-
-int	main(void)
-{
-	char s1[] = "this is test code to test KMP";
-	char s2[] = "te";
-
-	strstr_KMP(s1, s2);
-
-	return (0);
 }
